@@ -15,4 +15,4 @@ File {
   mode  => '0644',
 }
 
-include baseconfig, mysql, apache, php, apache_vhosts, memcached, symfony3config
+include baseconfig, mysql, apache, php, apache_vhosts, memcached, sphinxsearch, symfony3config
