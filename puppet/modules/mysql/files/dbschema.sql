@@ -15,7 +15,7 @@ USE `symfony3playground`;
 
 
 -- this is only demo table to make sphinx search properly install and run - feel free to remove this, but be aware to adjust sphinx.conf in /puppet/modules/sphinxsearch/files afterwards
-DROP TABLE `symfony3demo`;
+DROP TABLE IF EXISTS `symfony3demo`;
 CREATE TABLE `symfony3demo` (
 	`ID` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
 	`name` VARCHAR(255) NULL DEFAULT NULL,
