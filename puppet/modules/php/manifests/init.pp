@@ -42,11 +42,6 @@ class php {
     '/etc/php5/cli/php.ini':
       source  => 'puppet:///modules/php/cli-php.ini',
       require => Package['php5-cli'];
-	  
-    '/etc/php5/mods-available/xdebug.ini':
-      source  => 'puppet:///modules/php/mods/xdebug.ini',
-      require => Package['php5-xdebug'];
-	  
   }
   exec { 'apache install php module':
 	command		=> 'sudo a2enmod php5',
